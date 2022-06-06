@@ -19,7 +19,8 @@ describe('cats routes', () => {
   });
 
   it('/cats/:id should return cat detail', async () => {
-    const res = await request(app).get('/cats/1');
+    const res = await request(app).get('/cats/2');
+    // change route back to /cats/1
     const felix = {
       id: '1',
       name: 'Felix',
@@ -36,3 +37,4 @@ describe('cats routes', () => {
     pool.end();
   });
 });
+
