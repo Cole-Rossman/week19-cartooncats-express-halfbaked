@@ -36,3 +36,4 @@ describe('cats routes', () => {
     pool.end();
   });
 });
+
